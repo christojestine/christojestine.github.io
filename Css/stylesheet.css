@@ -1,0 +1,269 @@
+:root{
+    --ff--primary:'Roboto Condensed', sans-serif;
+    --ff--secondary:'Open Sans', sans-serif;
+    --ffw--primary:300;
+    --ffw--bold:900;
+    --clrbg:#ffffff;
+    --clr-text:#E7B78A;
+    --clr-accent:#F3C98B;
+
+    --fs-h1:3rem;
+    --fs-h2:2.5rem;
+    --fs-h3:1.25rem;
+    --fs-body:1rem;
+}
+/* @media(min-width:600px)
+{ */
+    body{
+        font-family: var(--ff--secondary);
+        background-color: rgba(255,253,208,0.4);
+    }
+    a:link{
+        color:rgb(255, 255, 255); 
+        text-decoration: none;
+    }
+    a:hover{
+        color:rgb(255, 200, 0);
+        text-decoration: none;
+    }
+    a:active{
+        color:rgb(255, 0, 0);
+        text-decoration: none;
+    }
+    aside{
+        /* position: relative; */
+        /* position: fixed; */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 0.2rem;
+        background-color: var(--clr-accent);
+        display:float;
+        float:left;
+        width: 30%;
+        box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+        color:white;
+        text-shadow: 2px 2px 3px black;
+        margin-right: 40px;
+        z-index: 1;
+        /* height: 2000px; */
+        padding-bottom:12px;
+    }
+    .aside_heading{
+        text-align: center;
+        font-family: var(--ff--primary);
+        font-weight: var(--ffw--primary);
+        font-size: 2.5rem;
+        background-color:rgba(0, 0, 0, 0.5);
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        text-shadow: 2px 4px 3px black;
+    }
+    .aside_img{
+        padding: 4px 20px;
+        margin: 0px;
+        align-items:center;
+        width:90%;
+    }
+    .aside_h4{
+        margin:0px 20px;
+        font-size: larger;
+        text-align: center;
+        font-family: var(--ff--secondary);
+        margin-bottom: 20px;
+    
+    }
+    .inside_aside{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .list_aside_section{
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 8px;
+    }
+    i{
+        font-size: 1.5rem;
+    }
+    .aside_td{
+        text-align: left;
+    }
+    .aside_th_link:link{
+        color:white;
+
+    }
+    .aside_h4_2{
+        margin: 0px 10px;
+        padding-bottom: 0px;
+        font-family: var(--ff--secondary);
+        font-size:1.5rem;
+    }
+    .aside_ul{
+        font-family:var(--ff--primary);
+        margin: 1em;
+        font-size: 1.1em;
+    }
+    header{
+        background-color:var(--clr-accent);
+        box-shadow: 2px 2px 2px black;
+        padding: 2rem;
+    }
+    .main_heading{
+        padding-top: 0.5rem;
+        font-family:var(--ff--secondary);
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+    .main_heading_h1{
+        text-align: right;
+        margin-bottom:0px;
+        font-size: 2.2rem;
+        line-height: 4rem;
+        padding-right: 1rem;
+    }
+    .main_heading_h3{
+        text-align: right;
+        margin-top: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding-right: 1rem;
+    }
+    .title_part_header{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+
+    }
+    .link_header{
+        box-shadow: 2px 2px 2px black;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding: 10px 50px;
+        font-size: 1.5rem;
+        color:white
+    }
+    .publications{
+        color:#53432c;
+        padding:0px;
+        margin:10px;
+        margin-bottom: 30px;
+    }
+    .section_h3{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .section_para{
+        font-size: 1.25rem;
+        margin: 10px;
+    }
+    .link_body{
+        border-top: 1rem;
+        box-shadow: 2px 2px 2px black;
+        background-color:#53432c;
+        border-radius: 6px;
+        padding: 5px 50px;
+        font-size: 1.25rem;
+        color:white
+
+    }
+    .certification{
+        background-color:rgba(0, 0, 0, 0.1);
+        z-index: auto;
+    }
+    .certification_badge{
+        display: grid;
+        height: 100x;
+        text-align: center;
+        /* margin-left: 100px; */
+    }
+    .certification_h4{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .dsa_img{
+        width:80%;
+        align-items: center;
+    }
+    .Educational{
+        display: grid;
+    }
+    .section_dl{
+        margin-left: 80px;
+        font-size: 1.25rem;
+        margin-top: 0px;
+    }
+    .Internship{
+        display:grid;
+    }
+    .project{
+        display: grid;
+    }
+    .achivements{
+        display:grid;
+    }
+    .img_art{
+        margin-right: 0px;
+        padding:0px;
+
+    }
+    .scale-on-hover {
+        transition: transform 0.9s ease;
+    }
+    .scaleonhover:hover{
+        transform: scale(1.1);
+    }
+    footer{
+        display: flex;
+        background-color: #53432c;
+        color: wheat;
+        font-size: 1.28rem;
+        padding: 1rem;
+        box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .footer_left{
+        display: float;
+        float:left;
+        width: 50%;
+        line-height: 2rem;
+        text-align: left;
+    }
+    .footer_right{
+        line-height: 2rem;
+        margin-top: 2rem;
+        display: float;
+        float:right;
+        width: 50%;
+        text-align: right;
+    }    
+    .footer_center{     
+        line-height: 1rem;
+        text-align: center;
+        margin: 10px 0px 0px;
+        padding: 10px 0px 0px;
+        background-color: wheat;
+        border-radius: 5px;
+        padding-bottom: 10px;
+
+    }
+    .footer_link:hover{
+        background-color: black;
+    }
+    .typeinarea{
+        border-radius: 5px;
+    }
+    .category{
+        font-family: var(--ff--secondary);
+        color:#53432c;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .submitbtn{
+        font-family: var(--ff--secondary);
+        color:#53432c;
+        font-size: medium;
+        border-radius: 8px;
+    }
+    .button_class{
+        text-align: center;
+    }
+/* } */
