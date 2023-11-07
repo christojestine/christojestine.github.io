@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="widh=device-width" ,initial-scale=1.0>
     <title>Christo Jestine Resume</title>
+    <script src="./Script/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./Css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,6 +93,7 @@
             <li>Cloud</li>
             <li>Team Co-ordination</li>
         </ul>
+        <br>
         <h4 class="aside_h4_2">Extracurricular activities</h4>
         <ul class="aside_ul">
             <li>Video Editing</li>
@@ -251,7 +253,7 @@
         <section class="footer_left">
             <h2 class="section_h3">Contact:</h2>
             <hr><hr>
-            <form onsubmit="myfunc(event)"method='post'>
+            <form onsubmit='myfunc(event)' method='post'>
             
                 <table>
                     <tr>
@@ -280,40 +282,11 @@
                     </tr>
                 </table>
                 <div class="button_class">
-                    <button type="submit" class="submitbtn">Submit Request</button>
+                    <button type="submit"  class="submitbtn">Submit Request</button>
 
                 </div>
 
             </form>
-            <script type="text/javascript ">
-                function myfunc(event) {
-                    event.preventDefault();
-
-                    var name=document.getElementById("name").value;
-                    var email=document.getElementById("email").value;
-                    var phonenumber=document.getElementById("phonenumber").value;
-                    var category=document.getElementById("category").value;
-
-                    // localStorage.setItem('ls_name',name);
-                    // localStorage.setItem('ls_email',email);
-                    // localStorage.setItem('ls_phonenumber',phonenumber);
-                    // localStorage.setItem('ls_category',category);
-
-                    var data=[];
-                    data.push(name);
-                    data.push(email);
-                    data.push(phonenumber);
-                    data.push(category);
-                    var data_string=JSON.stringify(data);
-                    var file=new Blob([data_string],{type:"text"});
-                    var anchor=document.createElement("a");
-                    anchor.href=URL.createObjectURL(file);
-                    anchor.download="save.txt";
-                    anchor.click();
-                    alert("details submitted")
-
-                };
-            </script>
         </section>
         <section class="footer_right">
             <address>
